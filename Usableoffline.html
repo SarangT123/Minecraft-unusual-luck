@@ -1,0 +1,94 @@
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85099129-10"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-85099129-10');
+    </script>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+    <link href="./img/favicon.ico" rel="plezmo icon" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link rel="stylesheet" type="text/css" href="./css/blockly_common.css">
+    <link rel="stylesheet" type="text/css" href="./css/appBuilder.css">
+</head>
+
+<body>
+    <div id="blocklyDiv" style="height : 100vh; width: 100vw; display : none"> </div>
+    <!-- <div id="componentWrapperDiv" style="height : 100vh; width: 100vw;"></div> -->
+    
+    <div id="appWrapper" style="height : 100vh; width: 100vw; display: flex; justify-content: center; align-items: center; overflow-x:scroll; overflow-y:hidden">
+        <div id="appscreen_wrapperDiv" style="position : relative">
+            <div id="appScreenContainer" className="plezmo-screen"> </div>
+        </div>
+    </div>
+
+    <div id="loader_div" class="modal" style="display: flex; justify-content: center; align-items: center; position: absolute;top: 0;bottom: 0;left: 0; right: 0;"
+        onclick="event.stopPropagation()">
+        <img style="height:20vh" src="./img/Loading-Animation_1.gif" />
+    </div>
+</body>
+
+
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/app_constants.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoModels/CustomFilesManager.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/app_utils.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoCommon/protocol_constants.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExternalIncludes/Chart.bundle.min.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/ui_elements/DomElement.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/views/workspace_common.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoModels/midimanager.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoModels/community_backend.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/views/AppBuilder.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/blockly_commons.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExternalIncludes/blockly_compressed.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExternalIncludes/blocks_compressed.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExternalIncludes/javascript_compressed.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/locales/en/app_msgs.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/locales/en/custom_block_msgs.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/locales/en/blockly_msgs.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/custom_block_definitions.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/custom_block_code.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/appBuilder_block_definition.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/appBuilder_block_code.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/virtual_elements/device_desktop.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/views/workspace_constants.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExternalIncludes/jszip.min.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./deployableWebApp/deployableWebAppMain.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./deployableWebApp/elementmanagement.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/views/constants.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/views/ui_protocol_constants.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoCommon/element.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoCommon/log_wrapper.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/ui_elements/ui_switch.js"></script>  -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/ui_elements/ui_graph.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/ui_elements/ui_table.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoFrontEnd/views/WorkspaceDBManager.js"></script> -->
+
+
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoBackend/protocol_parsing.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./deployableWebApp/backendToNativeBridge.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoBackend/FileTransferHandler.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoBackend/upgradeHandler_constants.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoBackend/em_backend.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExecutionEngine/interpreter.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoCommon/global_variables.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExecutionEngine/acorn.js "></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExecutionEngine/scheduler.js "></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExecutionEngine/interpreter_initialization.js"></script> -->
+<!-- imported in min.js <script type="text/javascript" src="./js/plezmoExecutionEngine/blockly_execution.js"></script> -->
+
+<!-- <script type="text/javascript" src="./js/plezmoBackend/UpgradeHandler.js"></script> -->
+<!-- <script type="text/javascript" src="./js/plezmoExecutionEngine/execution_constants.js"></script> -->
+<!-- <script type="text/javascript" src="./js/plezmoExecutionEngine/execution_manager.js"></script> -->
+
+<script type="text/javascript" src="./deployableWebApp/deployableAppImportFrontend.min.js"></script>
+<script type="text/javascript" src="./deployableWebApp/deployableAppImportBackend.min.js"></script>
+</html>
